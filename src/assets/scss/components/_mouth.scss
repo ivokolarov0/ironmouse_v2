@@ -1,0 +1,82 @@
+.mouth {
+  position: absolute;
+  left: 43%;
+  top: 87%;
+  width: 15%;
+  padding-bottom: 8%;
+  overflow: hidden;
+}
+
+.mouth__open {
+  position: absolute;
+  left: 15%;
+  top: -180%;
+  width: 80%;
+  padding-bottom: 150%;
+  background-color: var(--mouth-tongue);
+  border-radius: 50%;
+  transform: rotate(-15deg);
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -15%;
+    left: 10%;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    transform: rotate(33deg);
+    box-shadow: -10px 0 0 1px var(--mouth-tongue-shadow);
+  }
+}
+
+.mouth__upper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-bottom: 18%;
+
+  .mouth__lip {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 200%;
+    border-radius: 40%;
+    overflow: hidden;
+
+    &:nth-child(1) {
+      left: -20%;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 2%;
+        width: 90%;
+        height: 40%;
+        background-color: var(--head-face);
+        border-radius: 50%;
+        box-shadow: -1px 1px 0 1px rgba(#000, 0.2);
+      }
+    }
+
+    &:nth-child(2) {
+      right: -30%;
+      width: 110%;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 2%;
+        width: 90%;
+        height: 40%;
+        background-color: var(--head-face);
+        border-radius: 50%;
+        box-shadow: -1px 1px 0 1px rgba(#000, 0.2);
+      }
+    }
+  }
+}

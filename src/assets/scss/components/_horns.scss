@@ -1,0 +1,39 @@
+.horns {
+  position: absolute;
+  top: 7%;
+  left: 14.5%;
+  width: 69%;
+  padding-bottom: 24.7%;
+  overflow: hidden;
+
+  .horn {
+    position: absolute;
+    top: -20%;
+    width: 30%;
+    height: 140%;
+    border-radius: 50%;
+    border-left: 1px solid #000;
+    overflow: hidden;
+
+    &.left {
+      left: 0;
+    }
+
+    &.right {
+      right: 1%;
+      transform: rotateY(180deg);
+    }
+
+    .horn__inner {
+      position: absolute;
+      top: 2%;
+      left: 19%;
+      width: 50%;
+      height: 60%;
+      border-radius: 50%;
+      transform: rotate(-25deg);
+      box-shadow: -20px 0 0 10px #fff;
+      border-left: 1px solid #000;
+    }
+  }
+}

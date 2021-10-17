@@ -1,0 +1,22 @@
+.face {
+  position: absolute;
+  left: 50%;
+  top: 16%;
+  width: 69%;
+  transform: translateX(-53%);
+  padding-bottom: 61%;
+  margin: 0 auto;
+  border-radius: 47%;
+  overflow: hidden;
+
+  .face__inner {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    width: 120%;
+    height: 100%;
+    background-color: var(--head-face);
+    border-radius: 50%;
+    transform: translate(-50%, -53%);
+  }
+}

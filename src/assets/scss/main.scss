@@ -1,0 +1,17 @@
+@import './variables';
+
+@import './components/head';
+@import './components/face';
+@import './components/eyes';
+@import './components/eye';
+@import './components/mouth';
+@import './components/horns';
+@import './components/blush';
+
+#ironmouse {
+  position: relative;
+  width: 380px;
+  height: 381px;
+  margin: 0 auto;
+  overflow: hidden;
+}
