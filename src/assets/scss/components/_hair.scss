@@ -1,0 +1,56 @@
+.hair {
+  position: absolute;
+  left: 50%;
+  top: 14%;
+  width: 147%;
+  padding-bottom: 70%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+
+  .hair__back {
+    .hair__back-item {
+      position: absolute;
+      top: 8%;
+      left: 16%;
+      width: 20%;
+      padding-bottom: 37%;
+      transform: rotate(15deg);
+      border-radius: 40%;
+      overflow: hidden;
+    }
+
+    .hair__back-item-inner {
+      position: absolute;
+      left: 2%;
+      top: 3%;
+      width: 100%;
+      padding-bottom: 180%;
+      border-radius: 28%;
+      transform: rotate(7deg);
+      overflow: hidden;
+    }
+
+    .hair__back-item-holder {
+      position: absolute;
+      top: 3%;
+      left: 4%;
+      width: 78%;
+      height: 100%;
+      transform: rotate(1deg);
+      border-radius: 0 0 0 60%;
+      overflow: hidden;
+    }
+
+    .hair__back-item-outer {
+      position: absolute;
+      bottom: 12%;
+      left: -37%;
+      width: 260%;
+      padding-bottom: 250%;
+      background: var(--hair-purple);
+      transform: rotate(15deg);
+      border-radius: 50%;
+    }
+  }
+}

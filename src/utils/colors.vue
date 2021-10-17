@@ -1,11 +1,11 @@
 <template>
   <div class="colors">
-    <v-style v-for="(color, index) in colorVars" :key="index">
-      :root { --{{ color.slug }}: {{ color.color }}
+    <v-style>
+      :root {
+      {{ colorValues }}
       }
     </v-style>
   </div>
-  <!-- /.colors -->
 </template>
 
 <script>
@@ -73,19 +73,31 @@ export default {
           },
         ],
       },
+      {
+        title: 'Hair',
+        slug: 'hair',
+        arr: [
+          {
+            label: 'Purple',
+            slug: 'purple',
+            color: '#81678d',
+          },
+        ],
+      },
     ],
   }),
 
   computed: {
-    colorVars() {
-      return this.colors.reduce((acc, { arr, slug }) => {
-        const item = arr.map((color) => ({
-          color: color.color,
-          slug: `${slug}-${color.slug}`,
-        }));
-        acc = [...acc, ...item];
-        return acc;
-      }, []);
+    colorValues() {
+      return this.colors
+        .reduce((acc, { arr, slug }) => {
+          const item = arr.map(
+            (color) => `--${slug}-${color.slug}: ${color.color}`
+          );
+          acc = [...acc, ...item];
+          return acc;
+        }, [])
+        .join(';');
     },
   },
 };

@@ -5,6 +5,7 @@
   width: 69%;
   padding-bottom: 24.7%;
   overflow: hidden;
+  z-index: 1;
 
   .horn {
     position: absolute;
@@ -32,7 +33,7 @@
       height: 60%;
       border-radius: 50%;
       transform: rotate(-25deg);
-      box-shadow: -20px 0 0 10px #fff;
+      box-shadow: -30px 40px 0 10px #fff;
       border-left: 1px solid #000;
     }
   }
