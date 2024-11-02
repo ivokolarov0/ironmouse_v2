@@ -82,6 +82,11 @@ export default {
             slug: 'purple',
             color: '#81678d',
           },
+          {
+            label: 'Pink',
+            slug: 'pink',
+            color: '#f9b1cf',
+          },
         ],
       },
     ],

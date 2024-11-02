@@ -1,0 +1,202 @@
+.hair__front {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 55%;
+  padding-bottom: 36%;
+  transform: translateX(-50%);
+
+  .hair__front-strands {
+    .strand {
+      position: absolute;
+
+      &:nth-child(1) {
+        top: 46%;
+        left: -10%;
+        width: 20%;
+        padding-bottom: 20%;
+        border-radius: 50%;
+        overflow: hidden;
+
+        .strand__inner {
+          position: absolute;
+          top: -18%;
+          right: 31%;
+          width: 50%;
+          padding-bottom: 150%;
+          border-radius: 50%;
+          transform: rotate(15deg);
+          box-shadow: inset -1px 0 0 1px rgba(#000, 0.2),
+            10px 0 0 0 var(--hair-pink);
+        }
+      }
+
+      &:nth-child(2) {
+        top: 7%;
+        left: 3%;
+        width: 120%;
+        padding-bottom: 52%;
+        overflow: hidden;
+
+        .strand__inner {
+          position: absolute;
+          top: -47%;
+          left: 1%;
+          width: 60%;
+          padding-bottom: 90%;
+          border-radius: 50%;
+          box-shadow: inset 4px 14px 0 var(--hair-pink),
+            -1px 0 1px 0 rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      &:nth-child(3) {
+        left: 6%;
+        top: 72%;
+        width: 5%;
+        padding-bottom: 10%;
+        border-radius: 30%;
+        transform: rotate(-15deg);
+        overflow: hidden;
+
+        .strand__inner {
+          position: absolute;
+          left: 37%;
+          top: -55%;
+          width: 210%;
+          padding-bottom: 440%;
+          border-radius: 50%;
+          transform: rotate(12deg);
+          box-shadow: -10px 0 0 10px var(--hair-pink);
+        }
+      }
+
+      &:nth-child(4) {
+        top: 73%;
+        left: 3%;
+        width: 14%;
+        padding-bottom: 20%;
+        border-radius: 50%;
+        overflow: hidden;
+
+        .strand__inner {
+          position: absolute;
+          top: 32%;
+          right: -34%;
+          width: 200%;
+          padding-bottom: 90%;
+          border-radius: 50%;
+          transform: rotate(60deg);
+          box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.2),
+            4px -15px 0 0 var(--hair-pink);
+        }
+      }
+
+      &:nth-child(5) {
+        left: 14%;
+        top: 5%;
+        width: 6%;
+        height: 85%;
+        overflow: hidden;
+        z-index: 2;
+
+        .strand__inner {
+          position: absolute;
+          top: 1%;
+          left: 33%;
+          width: 300%;
+          height: 110%;
+          border-radius: 100%;
+          box-shadow: -1px 0 1px 1px rgba(#000, 0.1),
+            -10px -28px 0 10px var(--hair-pink);
+        }
+      }
+
+      &:nth-child(6) {
+        top: 57%;
+        left: 9%;
+        width: 5%;
+        padding-bottom: 13%;
+        background-color: var(--hair-pink);
+      }
+
+      &:nth-child(7) {
+        top: -61%;
+        left: -49%;
+        width: 80%;
+        padding-bottom: 80%;
+        border-radius: 50%;
+        overflow: hidden;
+
+        .strand__inner {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 22%;
+          height: 50%;
+          background: var(--hair-pink);
+        }
+      }
+
+      &:nth-child(8) {
+        top: -24%;
+        left: 30%;
+        width: 60%;
+        padding-bottom: 48%;
+        border-radius: 50%;
+        overflow: hidden;
+
+        .strand__inner {
+          position: absolute;
+          left: 11%;
+          top: -10%;
+          width: 120%;
+          height: 125%;
+          border-radius: 50%;
+          box-shadow: -10px 0 0 10px var(--hair-pink);
+        }
+      }
+
+      &:nth-child(9) {
+        top: -24%;
+        left: 28%;
+        width: 60%;
+        padding-bottom: 45%;
+        border-radius: 50%;
+        overflow: hidden;
+
+        .strand__inner {
+          position: absolute;
+          left: 14%;
+          top: 29%;
+          width: 120%;
+          height: 85%;
+          border-radius: 50%;
+          box-shadow: -40px 10px 0 10px var(--hair-pink);
+          transform: rotate(33deg);
+        }
+      }
+
+      &:nth-child(10) {
+        top: -39%;
+        left: 40%;
+        width: 61%;
+        padding-bottom: 55%;
+        border-radius: 50%;
+        overflow: hidden;
+
+        .strand__inner {
+          position: absolute;
+          top: 53%;
+          left: 14%;
+          width: 61%;
+          padding-bottom: 35%;
+          border-radius: 50%;
+          transform: rotate(53deg);
+          box-shadow: -30px 30px 0 10px var(--hair-pink);
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
